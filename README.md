@@ -62,3 +62,39 @@ lib/
 ├── services/     # Logique métier et calculs statistiques [cite: 104]
 ├── widgets/      # Composants UI atomiques et animations [cite: 104]
 └── main.dart     # Point d'entrée & State Management
+
+### 📱 Aperçu de l'Expérience
+
+#### 🏗️ Démonstration Interactive
+<p align="center">
+  <img src="assets/images/kanban_gif.gif" width="250" alt="Démo Kanban">
+</p>
+
+#### 🎨 Onboarding & Authentification
+<p align="center">
+  <img src="assets/images/splash_screen.jpeg" width="200" style="margin: 5px">
+  <img src="assets/images/signin.jpeg" width="200" style="margin: 5px">
+  <img src="assets/images/signup.jpeg" width="200" style="margin: 5px">
+</p>
+
+#### 📊 Dashboard & Pilotage
+<p align="center">
+  <img src="assets/images/home_page.jpeg" width="200" style="margin: 5px">
+  <img src="assets/images/statistics.jpeg" width="200" style="margin: 5px">
+  <img src="assets/images/roadmap.jpeg" width="200" style="margin: 5px">
+</p>
+
+<details>
+  <summary>📸 Voir la galerie complète (Interface détaillée)</summary>
+  <br>
+  <p align="center">
+    <img src="assets/images/kanban_backlog.jpeg" width="180" title="Backlog">
+    <img src="assets/images/kanban_en cours.jpeg" width="180" title="En cours">
+    <img src="assets/images/kanban_terminé.jpeg" width="180" title="Terminé">
+    <img src="assets/images/list_idea_page.jpeg" width="180" title="Liste">
+    <img src="assets/images/new_idea_page.jpeg" width="180" title="Ajout">
+    <img src="assets/images/history.jpeg" width="180" title="Historique">
+    <img src="assets/images/profil.jpeg" width="180" title="Profil">
+    <img src="assets/images/parametres.jpeg" width="180" title="Paramètres">
+  </p>
+</details>
