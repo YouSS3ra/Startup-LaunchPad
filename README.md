@@ -62,7 +62,7 @@ lib/
 ├── services/     # Logique métier et calculs statistiques [cite: 104]
 ├── widgets/      # Composants UI atomiques et animations [cite: 104]
 └── main.dart     # Point d'entrée & State Management
-
+```
 ### 📱 Aperçu de l'Expérience
 
 #### 🏗️ Démonstration Interactive
