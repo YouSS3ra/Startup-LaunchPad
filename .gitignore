@@ -1,0 +1,26 @@
+# Fichiers de compilation Flutter
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+
+# Symboles de debug
+*.pdb
+*.exe
+*.dll
+
+# Configuration de l'IDE (VS Code / Android Studio)
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Fichiers de données locales (ne pas partager ta base de données de test)
+*.db
+*.db-journal
