@@ -1,94 +1,64 @@
-Startup LaunchPad
+# 🛸 Startup LaunchPad
 
 <p align="center">
-<img src="assets/images/logo.jpeg" width="150" alt="Startup LaunchPad Logo" style="border-radius: 20px;">
+  <img src="assets/images/logo.jpeg" width="120" alt="Logo" style="border-radius: 50%;">
 </p>
 
 <p align="center">
-<strong>L'outil ultime pour transformer vos idées en Roadmaps concrètes.</strong>
-
-
-<i>Built with Flutter & SQLite — Designed for Entrepreneurs.</i>
+  <b>L'architecte de votre innovation.</b><br>
+  [cite_start]Une expérience fluide pour transformer l'intuition en exécution réelle[cite: 4, 11].
 </p>
-✨ Vision du Projet
 
-Startup LaunchPad est une application mobile conçue pour lever les barrières entre l'idéation et l'exécution. Elle permet aux innovateurs de centraliser leurs réflexions, de structurer leurs priorités et de visualiser l'avancement de leur projet à travers un environnement fluide et utilisable 100% hors-ligne.
-🛠️ Stack Technique & Architecture
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+</p>
 
-L'application repose sur une séparation stricte des préoccupations pour garantir performance et maintenabilité :
+---
 
-<table>
-<tr>
-<td width="50%">
-<h3>Core Tech</h3>
-<ul>
-<li><b>Framework:</b> Flutter</li>
-<li><b>Langage:</b> Dart</li>
-<li><b>Local DB:</b> SQLite (startup.db)</li>
-<li><b>Charts:</b> fl_chart</li>
-</ul>
-</td>
-<td width="50%">
-<h3>Architecture</h3>
-<ul>
-<li><b>Pattern:</b> Modèle-Vue-Service (MVS)</li>
-<li><b>State Management:</b> Provider / Riverpod</li>
-<li><b>Logic:</b> Repository Pattern</li>
-</ul>
-</td>
-</tr>
-</table>
-📋 Fonctionnalités Clés
-🧠 Gestion d'Idées Intelligente
+### 🖋️ Le Concept
+[cite_start]**Startup LaunchPad** est une application mobile conçue pour lever les barrières entre l'idéation et l'exécution[cite: 4]. [cite_start]Elle permet aux innovateurs de centraliser leurs réflexions, de structurer leurs priorités et de visualiser l'avancement de leur projet à travers un environnement fluide et utilisable **100% hors-ligne**[cite: 6, 26].
 
-    Centralisation par catégories : Tech, Marketing, Business, Produit.
+---
 
-    Système de tri par priorité (Haute, Moyenne, Basse).
+### 🏗️ Ingénierie & Architecture
+[cite_start]L'application repose sur une séparation stricte des préoccupations pour garantir performance et maintenabilité[cite: 104]:
 
-    Recherche textuelle ultra-rapide.
+| 💻 Stack Core | 📐 Patterns |
+| :--- | :--- |
+| [cite_start]**Framework:** Flutter [cite: 99] | [cite_start]**Architecture:** MVS (Modèle-Vue-Service) [cite: 104] |
+| **Langage:** Dart | [cite_start]**State Management:** Provider / Riverpod / Bloc [cite: 102] |
+| [cite_start]**Base de données:** SQLite [cite: 16, 70] | [cite_start]**Logic:** Repository Pattern [cite: 104] |
+| [cite_start]**Analytics:** fl_chart [cite: 65] | [cite_start]**UI:** Kanban Design [cite: 14, 39] |
 
-📊 Tableau Kanban Dynamique
+---
 
-    Visualisation du flux de travail en 3 étapes : Backlog, In Progress, Done.
+### 🕹️ Expérience Produit
 
-    Mise à jour intuitive des statuts.
+#### 🧠 Gestion d'Idées Intelligente
+* [cite_start]**Centralisation multidimensionnelle** : Organisation par catégories (Tech, Marketing, Business, Produit)[cite: 33].
+* [cite_start]**Priorisation stratégique** : Système de tri par niveaux d'importance (Haute, Moyenne, Basse)[cite: 32, 84].
+* [cite_start]**Moteur de recherche** : Indexation textuelle pour retrouver vos idées instantanément[cite: 38].
 
-    Compteurs d'avancement en temps réel.
+#### 📊 Écosystème Kanban
+* [cite_start]**Flux dynamique** : Visualisation en 3 étapes : *Backlog*, *In Progress*, et *Done*[cite: 40, 41, 42, 43].
+* [cite_start]**Gestion intuitive** : Mise à jour fluide des statuts via drag-and-drop ou boutons dédiés[cite: 45, 86].
+* [cite_start]**Monitoring** : Compteurs d'activité intégrés pour chaque colonne de flux[cite: 47].
 
-📈 Roadmap & Analytics
+#### 📈 Roadmap & Analytics
+* [cite_start]**Progression visuelle** : Monitoring global via des indicateurs circulaires et barres de progression[cite: 57, 63].
+* [cite_start]**Insights** : Graphiques détaillés de la répartition des efforts par catégorie et priorité[cite: 61, 62].
 
-    Progression globale du projet via des barres et cercles interactifs.
+---
 
-    Graphiques détaillés de la répartition des efforts.
-
-    Historique des activités récentes.
-
-📂 Organisation du Code
-Plaintext
-
+### 📂 Anatomie du Code
+```bash
 lib/
-├── database/     # Configuration & Requêtes SQLite
-├── models/       # Entités Ideas, Categories, Stats
-├── pages/        # UI Screens (Kanban, Dashboard, Roadmap)
-├── repositories/ # Abstraction de la manipulation de données
-├── services/     # Logique métier & Services internes
-├── widgets/      # Composants UI réutilisables (Cards, Badges)
+├── database/     # Schémas et gestion SQLite (startup.db) [cite: 71]
+├── models/       # Entités Ideas & Data Structures [cite: 104]
+├── pages/        # Écrans Dashboard, Kanban & Roadmap [cite: 104]
+├── repositories/ # Couche d'accès aux données persistantes [cite: 104]
+├── services/     # Logique métier et calculs statistiques [cite: 104]
+├── widgets/      # Composants UI atomiques et animations [cite: 104]
 └── main.dart     # Point d'entrée & State Management
-
-📱 Aperçu Visuel
-
-<p align="center">
-<img src="assets/images/startup_splash.jpg" width="200" alt="Splash Screen">
-<img src="assets/images/splash_page1.jpg" width="200" alt="Intro 1">
-<img src="assets/images/splash_page2.jpg" width="200" alt="Intro 2">
-</p>
-⚙️ Installation
-Bash
-
-# Cloner le projet
-git clone https://github.com/votre-pseudo/startup-launchpad.git
-
-# Installer les dépendances
-flutter pub get
-# Lancer l'application
-flutter run
