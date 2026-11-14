@@ -1,102 +1,257 @@
-# 🛸 Startup LaunchPad
+# Startup LaunchPad
 
 <p align="center">
-  <img src="assets/images/logo.jpeg" width="120" alt="Logo" style="border-radius: 50%;">
+  <img src="assets/images/logo.jpeg" width="110" alt="Startup LaunchPad logo" />
+</p>
+
+<h3 align="center">Turn ideas into structured action.</h3>
+
+<p align="center">
+  A mobile workspace to capture ideas, organize priorities, plan progress, and keep track of the journey from concept to completion.
 </p>
 
 <p align="center">
-  <b>L'architecte de votre innovation.</b><br>
-  Une expérience fluide pour transformer l'intuition en exécution réelle.
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
-  <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
-  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart">
+  <a href="#overview">Overview</a> ·
+  <a href="#product-capabilities">Features</a> ·
+  <a href="#application-preview">Preview</a> ·
+  <a href="#technical-overview">Technical Overview</a> ·
+  <a href="#getting-started">Getting Started</a>
 </p>
 
 ---
 
-### 🖋️ Le Concept
-**Startup LaunchPad** est une application mobile conçue pour lever les barrières entre l'idéation et l'exécution. Elle permet aux innovateurs de centraliser leurs réflexions, de structurer leurs priorités et de visualiser l'avancement de leur projet à travers un environnement fluide et utilisable **100% hors-ligne**.
+## Overview
+
+Ideas are easy to generate, but turning them into concrete, organized work requires structure.
+
+**Startup LaunchPad** was designed to address this gap by bringing idea management, prioritization, planning, and progress tracking into a single mobile application.
+
+Rather than treating ideas as isolated notes, the application provides a workflow through which users can organize their thinking, define priorities, follow progress, and review their activity.
+
+The result is a centralized workspace that connects the initial idea to its execution.
+
+## Product Capabilities
+
+The application is organized around a set of complementary capabilities that support the idea-management lifecycle.
+
+### 01 — Idea Management
+
+A structured space for capturing and organizing ideas.
+
+- Create, view, update, and delete ideas.
+- Classify ideas into categories.
+- Assign High, Medium, or Low priority levels.
+- Search and sort ideas.
+- Filter by category and priority.
+- Track the current status of each idea.
+
+### 02 — Workflow Management
+
+A Kanban board that makes the progress of ideas visible.
+
+- Three workflow stages: Backlog, In Progress, and Completed.
+- Drag-and-drop interactions to move ideas between stages.
+- Status-based organization and activity counters.
+
+### 03 — Planning & Roadmap
+
+A planning view that helps users understand what needs attention and how work is progressing.
+
+- Overall progress monitoring.
+- Identification of high-priority pending ideas.
+- Estimated deadlines.
+- Progress breakdown by category.
+
+### 04 — Dashboard & Progress Insights
+
+A consolidated overview of the user's ideas and their current state.
+
+- Total number of ideas.
+- Completed ideas and overall progress.
+- Distribution by status and priority.
+
+### 05 — Activity Tracking
+
+An activity history that allows users to review recorded actions and follow changes within the application.
+
+### 06 — Personalization & Data Management
+
+Features designed to make the application more adaptable and support data portability.
+
+- Profile information management.
+- Email and password updates.
+- Dark mode and font-size customization.
+- JSON export and import of ideas.
+- Duplicate prevention during data import.
 
 ---
 
-### 🏗️ Ingénierie & Architecture
-L'application repose sur une séparation stricte des préoccupations pour garantir performance et maintenabilité:
+## Application Preview
 
-| 💻 Stack Core | 📐 Patterns |
-| :--- | :--- |
-| **Framework:** Flutter |**Architecture:** MVS (Modèle-Vue-Service) |
-| **Langage:** Dart | **State Management:** Provider / Riverpod / Bloc  |
-| **Base de données:** SQLite | **Logic:** Repository Pattern  |
-| **Analytics:** fl_chart | **UI:** Kanban Design |
+A selection of application screens illustrating the user journey and its main interaction experience.
+
+### Getting Started
+
+<p align="center">
+  <img src="assets/images/splash_screen.jpeg" width="180" alt="Startup LaunchPad splash screen" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/images/signin.jpeg" width="180" alt="Sign-in screen" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="assets/images/signup.jpeg" width="180" alt="Sign-up screen" />
+</p>
+
+<p align="center">
+  <sub>Application entry point and account access screens.</sub>
+</p>
+
+### Managing Ideas Through Kanban
+
+<p align="center">
+  <img src="assets/images/kanban_gif.gif" width="340" alt="Kanban board interaction demonstration" />
+</p>
+
+<p align="center">
+  <sub>A visual workflow for organizing ideas and tracking their progress.</sub>
+</p>
+
+### Project Overview
+
+<p align="center">
+  <img src="assets/images/home_page.jpeg" width="300" alt="Startup LaunchPad dashboard" />
+</p>
+
+<p align="center">
+  <sub>A centralized view of ideas and project progress.</sub>
+</p>
 
 ---
 
-### 🕹️ Expérience Produit
+## Technical Overview
 
-#### 🧠 Gestion d'Idées Intelligente
-* **Centralisation multidimensionnelle** : Organisation par catégories (Tech, Marketing, Business, Produit).
-* **Priorisation stratégique** : Système de tri par niveaux d'importance (Haute, Moyenne, Basse).
-* **Moteur de recherche** : Indexation textuelle pour retrouver vos idées instantanément.
+Startup LaunchPad is built with Flutter and Dart, with SQLite providing local relational data persistence.
 
-#### 📊 Écosystème Kanban
-* **Flux dynamique** : Visualisation en 3 étapes : *Backlog*, *In Progress*, et *Done*.
-* **Gestion intuitive** : Mise à jour fluide des statuts via drag-and-drop ou boutons dédiés.
-* **Monitoring** : Compteurs d'activité intégrés pour chaque colonne de flux.
+The codebase is organized into dedicated directories for data models, database management, repositories, application services, settings, UI pages, and reusable widgets.
 
-#### 📈 Roadmap & Analytics
-* **Progression visuelle** : Monitoring global via des indicateurs circulaires et barres de progression.
-* **Insights** : Graphiques détaillés de la répartition des efforts par catégorie et priorité.
+This organization separates several application responsibilities and provides a clear starting point for future maintenance and evolution.
 
----
+### Technology Stack
 
-### 📂 Anatomie du Code
-```bash
+| Technology | Role |
+|---|---|
+| **Flutter** | Mobile application framework |
+| **Dart** | Application programming language |
+| **SQLite** | Local relational database |
+| **sqflite** | SQLite database integration |
+| **SharedPreferences** | Persistence of application preferences |
+| **file_picker** | File selection for data import |
+| **path / path_provider** | File and storage path utilities |
+
+### Data Persistence
+
+The application uses SQLite through `sqflite` for its local database.
+
+The database includes dedicated tables for:
+
+- Ideas
+- Users
+- Activity history
+
+Application appearance preferences are stored separately using `SharedPreferences`.
+
+### Code Organization
+
+```text
 lib/
-├── database/     # Schémas et gestion SQLite (startup.db) 
-├── models/       # Entités Ideas & Data Structures 
-├── pages/        # Écrans Dashboard, Kanban & Roadmap 
-├── repositories/ # Couche d'accès aux données persistantes 
-├── services/     # Logique métier et calculs statistiques 
-├── widgets/      # Composants UI atomiques et animations 
-└── main.dart     # Point d'entrée & State Management
+├── database/       # Database initialization and management
+├── models/         # Application data models
+├── pages/          # Screens and user-facing features
+├── repositories/   # Data access and persistence operations
+├── services/       # Application-level services
+├── settings/       # Application preferences and settings
+├── widgets/        # Reusable UI components
+└── main.dart       # Application entry point
 ```
-### 📱 Aperçu de l'Expérience
 
-#### 🏗️ Démonstration Interactive
+---
+
+## Getting Started
+
+Follow these steps to run the project locally.
+
+### Prerequisites
+
+- Flutter SDK
+- Dart SDK (`>=3.3.1 <4.0.0`)
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YouSS3ra/Startup-LaunchPad.git
+```
+
+### 2. Navigate to the project directory
+
+```bash
+cd Startup-LaunchPad
+```
+
+### 3. Install dependencies
+
+```bash
+flutter pub get
+```
+
+### 4. Run the application
+
+```bash
+flutter run
+```
+
+---
+
+## Project Status & Future Direction
+
+Startup LaunchPad represents the first version of the application, bringing together the essential capabilities for organizing ideas and following their progress.
+
+The project provides a foundation for future improvements, which may include:
+
+- Further refinement of the user experience.
+- Expanded planning and progress-tracking capabilities.
+- Additional data-management features.
+- Continued improvements to maintainability and application functionality.
+
+These directions are potential evolutions rather than features currently claimed as implemented.
+
+---
+
+## Team
+
+Startup LaunchPad was developed through collaborative work, with all team members contributing to the project.
+
+| Contributor | GitHub Profile |
+|---|---|
+| **Youssra Hamidouche** | [@YouSS3ra](https://github.com/YouSS3ra) |
+| **Najat Idraho** | [@najat-id-raho](https://github.com/najat-id-raho) |
+| **Ouissal Jouhari** | [@OuissalJ](https://github.com/OuissalJ) |
+
+---
+
+## Feedback & Collaboration
+
+This project is an opportunity to keep learning, building, and improving.
+
+Suggestions, feedback, and ideas for future enhancements are welcome. Feel free to explore the repository and share your thoughts.
+
 <p align="center">
-  <img src="assets/images/kanban_gif.gif" width="250" alt="Démo Kanban">
+  <strong>Startup LaunchPad</strong>
+  <br />
+  <sub>From an idea to a clearer path forward.</sub>
+  <br /><br />
+  Built with care by the Startup LaunchPad team.
 </p>
-
-#### 🎨 Onboarding & Authentification
-<p align="center">
-  <img src="assets/images/splash_screen.jpeg" width="200" style="margin: 5px">
-  <img src="assets/images/signin.jpeg" width="200" style="margin: 5px">
-  <img src="assets/images/signup.jpeg" width="200" style="margin: 5px">
-</p>
-
-#### 📊 Dashboard & Pilotage
-<p align="center">
-  <img src="assets/images/home_page.jpeg" width="200" style="margin: 5px">
-  <img src="assets/images/statistics.jpeg" width="200" style="margin: 5px">
-  <img src="assets/images/roadmap.jpeg" width="200" style="margin: 5px">
-</p>
-
-<details>
-  <summary>📸 Voir la galerie complète (Interface détaillée)</summary>
-  <br>
-  <p align="center">
-    <img src="assets/images/kanban_backlog.jpeg" width="180" title="Backlog">
-    <img src="assets/images/kanban_en cours.jpeg" width="180" title="En cours">
-    <img src="assets/images/kanban_terminé.jpeg" width="180" title="Terminé">
-    <img src="assets/images/list_idea_page.jpeg" width="180" title="Liste">
-    <img src="assets/images/new_idea_page.jpeg" width="180" title="Ajout">
-    <img src="assets/images/history.jpeg" width="180" title="Historique">
-    <img src="assets/images/profil.jpeg" width="180" title="Profil">
-    <img src="assets/images/parametres.jpeg" width="180" title="Paramètres">
-  </p>
-</details>
-
-<p align="center">Développé avec ❤️ par l'équipe Startup LaunchPad</p>
